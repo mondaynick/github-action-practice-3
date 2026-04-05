@@ -16,7 +16,7 @@ jobs:
           g++ main.cpp -o hello
 
       - name: Upload Ubuntu executable
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: cpp-executable-ubuntu
           path: hello
@@ -34,7 +34,7 @@ jobs:
           g++ main.cpp -o hello.exe
 
       - name: Upload Windows executable
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: cpp-executable-windows
           path: hello.exe
